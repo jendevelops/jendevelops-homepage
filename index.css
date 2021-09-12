@@ -15,6 +15,12 @@ a{
     color: #b4bec8
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .main {
     display: flex;
     flex-direction: row;
@@ -23,6 +29,7 @@ a{
     min-height: 95vh;
     justify-content: center;
     align-items: center;
+    padding: 5%;
 }
 
 #jen {
@@ -32,6 +39,9 @@ a{
 
 
 /* The switch - the box around the slider */
+label[for="dark-mode"]{
+    font-size: 24px;
+}
 .switch {
     position: relative;
     display: inline-block;
@@ -93,3 +103,9 @@ a{
   .slider.round:before {
     border-radius: 50%;
   }
+
+  @media only screen and (max-width:700px) {
+    .main{
+        flex-direction: column;
+    }
+}
