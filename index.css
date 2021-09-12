@@ -15,10 +15,25 @@ a{
     color: #b4bec8
 }
 
+a:hover{
+    font-weight:bold;
+}
+
 nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-basis: 0;
+}
+
+nav span{
+    flex-grow: 1;
+    text-align: right;
+}
+
+nav span a {
+    text-decoration: none;
+    padding: 0 10px;
 }
 
 .main {
@@ -107,5 +122,6 @@ label[for="dark-mode"]{
   @media only screen and (max-width:700px) {
     .main{
         flex-direction: column;
+        text-align: center;
     }
 }
