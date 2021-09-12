@@ -57,6 +57,9 @@ nav span a {
             drop-shadow(-1px -1px 0 white);
 }
 
+h1 span{
+    font-size: small;
+}
 
 /* The switch - the box around the slider */
 label[for="dark-mode"]{
@@ -143,5 +146,8 @@ label[for="dark-mode"]{
     nav span a {
         text-decoration: none;
         padding: 0 10px;
+    }
+    h1 span{
+        display: block;
     }
 }
