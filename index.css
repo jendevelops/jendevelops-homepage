@@ -37,7 +37,7 @@ nav span a {
     padding: 0 10px;
 }
 
-.main {
+section {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -128,7 +128,7 @@ label[for="dark-mode"]{
   }
 
   @media only screen and (max-width:700px) {
-    .main{
+    section{
         flex-direction: column;
         text-align: center;
     }
@@ -150,4 +150,56 @@ label[for="dark-mode"]{
     h1 span{
         display: block;
     }
+}
+
+@media only screen and (min-width:1440px) {
+    /* div {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 90vh;
+        flex-basis: 0;
+        gap: 0;
+    } */
+    section {
+        position: absolute;
+        padding: 0;
+        align-items: flex-start;
+        min-height: fit-content;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    nav{
+        position: absolute;
+        display: flex;
+        flex-direction: 'row';
+        width: 45%;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -50%);
+    } 
+}
+
+@media only screen and (min-width:2560px){
+    section {
+        position: absolute;
+        padding: 0;
+        align-items: flex-start;
+        min-height: fit-content;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    nav{
+        position: absolute;
+        display: flex;
+        flex-direction: 'row';
+        width: 30%;
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%, -50%);
+    } 
 }
