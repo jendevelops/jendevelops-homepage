@@ -41,7 +41,7 @@ nav span a {
     flex-direction: row;
     margin: auto;
     max-width: 1080px;
-    min-height: 95vh;
+    min-height: 75vh;
     justify-content: center;
     align-items: center;
     padding: 5%;
@@ -50,6 +50,10 @@ nav span a {
 #jen {
     width: 200px;
     height: 200px;
+    -webkit-filter: drop-shadow(1px 1px 0 white)
+                  drop-shadow(-1px -1px 0 white);
+    filter: drop-shadow(1px 1px 0 white) 
+            drop-shadow(-1px -1px 0 white);
 }
 
 
